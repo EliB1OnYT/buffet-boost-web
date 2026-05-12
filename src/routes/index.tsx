@@ -4,6 +4,11 @@ import hero from "@/assets/hero-buffet.jpg";
 import hibachi from "@/assets/hibachi.jpg";
 import sushi from "@/assets/sushi.jpg";
 import chinese from "@/assets/chinese.jpg";
+import gallery1 from "@/assets/gallery/album-1.jpg";
+import gallery2 from "@/assets/gallery/album-2.jpg";
+import gallery5 from "@/assets/gallery/album-5.jpg";
+import gallery7 from "@/assets/gallery/album-7.jpg";
+import gallery10 from "@/assets/gallery/album-10.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -125,6 +130,34 @@ function Home() {
                   <div className="text-xs text-muted-foreground uppercase tracking-wider">{r.role}</div>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="py-24 px-6 bg-secondary">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <p className="text-gold uppercase tracking-[0.3em] text-xs mb-4">Straight from the buffet</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">A taste of what's waiting</h2>
+            <p className="text-muted-foreground text-lg">Real plates. Real photos. No filters needed.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 [grid-auto-rows:140px] md:[grid-auto-rows:200px]">
+            {[
+              { src: gallery1, alt: "Signature buffet spread", cls: "col-span-2 row-span-2" },
+              { src: gallery2, alt: "Fresh sushi selection", cls: "col-span-1 row-span-1" },
+              { src: gallery7, alt: "Chinese specialties", cls: "col-span-1 row-span-2" },
+              { src: gallery5, alt: "Hibachi favorites", cls: "col-span-1 row-span-1" },
+              { src: gallery10, alt: "More buffet dishes", cls: "col-span-2 md:col-span-1 row-span-1" },
+            ].map((g) => (
+              <figure key={g.alt} className={`group relative overflow-hidden rounded-2xl ${g.cls} shadow-lg hover:shadow-[var(--shadow-glow)] transition-shadow duration-500`}>
+                <img src={g.src} alt={g.alt} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1200ms] ease-out" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <figcaption className="absolute bottom-3 left-4 right-4 text-background text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
+                  {g.alt}
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
