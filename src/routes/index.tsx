@@ -4,6 +4,11 @@ import hero from "@/assets/hero-buffet.jpg";
 import hibachi from "@/assets/hibachi.jpg";
 import sushi from "@/assets/sushi.jpg";
 import chinese from "@/assets/chinese.jpg";
+import gallery1 from "@/assets/gallery/album-1.jpg";
+import gallery2 from "@/assets/gallery/album-2.jpg";
+import gallery5 from "@/assets/gallery/album-5.jpg";
+import gallery7 from "@/assets/gallery/album-7.jpg";
+import gallery10 from "@/assets/gallery/album-10.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
