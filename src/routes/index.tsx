@@ -36,8 +36,8 @@ function Home() {
               Over 100 fresh Chinese dishes, hand-rolled sushi, and a live hibachi grill — all you can eat in the heart of St. Petersburg.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/menu" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gold text-ink font-semibold hover:scale-105 transition shadow-[var(--shadow-gold)]">
-                Explore the Menu
+              <Link to="/reviews" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gold text-ink font-semibold hover:scale-105 transition shadow-[var(--shadow-gold)]">
+                Read Reviews
               </Link>
               <Link to="/visit" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-background/40 text-background font-semibold hover:bg-background/10 transition">
                 <MapPin className="size-4" /> Visit Us
