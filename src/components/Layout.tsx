@@ -1,9 +1,10 @@
 import { Link, Outlet } from "@tanstack/react-router";
 import { Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/menu", label: "Menu" },
+  { to: "/reviews", label: "Reviews" },
   { to: "/about", label: "About" },
   { to: "/visit", label: "Visit" },
 ];
@@ -13,9 +14,12 @@ export function Layout() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-display text-2xl font-bold text-crimson">Super</span>
-            <span className="font-display text-2xl font-bold text-gold tracking-wider">Buffet</span>
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="Super Buffet" className="h-12 w-12 object-contain" />
+            <div className="flex items-baseline gap-2">
+              <span className="font-display text-2xl font-bold text-crimson">Super</span>
+              <span className="font-display text-2xl font-bold text-gold tracking-wider">Buffet</span>
+            </div>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             {nav.map((n) => (
