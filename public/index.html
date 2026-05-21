@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Super Buffet — All-You-Can-Eat Chinese & Sushi | St. Petersburg, FL</title>
+    <meta name="description" content="St. Pete's favorite all-you-can-eat buffet. Fresh sushi, hibachi grill, and 100+ Chinese dishes. $20–30 per person. Open daily." />
+    <meta property="og:title" content="Super Buffet — St. Petersburg, FL" />
+    <meta property="og:description" content="All-you-can-eat Chinese, sushi, and live hibachi. 4.0 stars · 1,145+ reviews." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --crimson: #8b1e2d;
+        --crimson-dark: #5a121d;
+        --gold: #d4a24a;
+        --cream: #faf6ef;
+        --ink: #1a1110;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        color: var(--ink);
+        background: var(--cream);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.1; font-weight: 800; }
+      .hero {
+        min-height: 100vh;
+        display: flex; align-items: center; justify-content: center;
+        text-align: center; padding: 2rem;
+        background:
+          linear-gradient(135deg, rgba(26,17,16,0.85), rgba(90,18,29,0.75)),
+          url('https://cdn.res-menu.net/super-buffet/albums-1.jpg') center/cover;
+        color: var(--cream);
+      }
+      .hero-inner { max-width: 880px; }
+      .eyebrow {
+        display: inline-block;
+        font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase;
+        color: var(--gold); border: 1px solid var(--gold);
+        padding: 0.5rem 1.25rem; border-radius: 999px; margin-bottom: 2rem;
+      }
+      h1 { font-size: clamp(2.5rem, 7vw, 5.5rem); margin-bottom: 1.5rem; }
+      h1 span { color: var(--gold); font-style: italic; }
+      .lede { font-size: clamp(1rem, 1.6vw, 1.25rem); opacity: 0.92; max-width: 620px; margin: 0 auto 2.5rem; }
+      .actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        padding: 1rem 2rem; border-radius: 999px;
+        font-weight: 600; font-size: 0.95rem; text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .btn-primary { background: var(--gold); color: var(--ink); }
+      .btn-secondary { background: transparent; color: var(--cream); border: 1px solid rgba(255,255,255,0.4); }
+      .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.25); }
+      .info {
+        max-width: 1100px; margin: 0 auto; padding: 5rem 2rem;
+        display: grid; gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      .card {
+        background: white; padding: 2rem; border-radius: 1rem;
+        border: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      }
+      .card h3 { font-size: 1.25rem; color: var(--crimson); margin-bottom: 0.75rem; }
+      .card p, .card a { color: #4a3f3d; font-size: 0.95rem; text-decoration: none; }
+      .card a:hover { color: var(--crimson); }
+      .stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; }
+      footer {
+        text-align: center; padding: 2rem; font-size: 0.85rem;
+        color: #6b5f5d; border-top: 1px solid rgba(0,0,0,0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">St. Petersburg · Since Day One</span>
+        <h1>Super <span>Buffet</span></h1>
+        <p class="lede">
+          All-you-can-eat Chinese classics, fresh-rolled sushi, and live hibachi —
+          served daily in the heart of St. Pete.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+17275209666">Call (727) 520-9666</a>
+          <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Super+Buffet+1035+62nd+Ave+N+St+Petersburg+FL+33702" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="card">
+        <h3>Visit Us</h3>
+        <p>1035 62nd Ave N<br />St. Petersburg, FL 33702</p>
+      </div>
+      <div class="card">
+        <h3>Hours</h3>
+        <p>Open daily · Closes 9:30 PM<br />Plenty of free parking</p>
+      </div>
+      <div class="card">
+        <h3>The Experience</h3>
+        <p>$20–30 per person · Private dining room available · Walk-ins welcome</p>
+      </div>
+      <div class="card">
+        <h3>Loved Locally</h3>
+        <p><span class="stars">★★★★☆</span><br />4.0 stars · 1,145+ Google reviews</p>
+      </div>
+    </section>
+
+    <footer>
+      © Super Buffet · 1035 62nd Ave N, St. Petersburg, FL 33702 · (727) 520-9666
+    </footer>
+  </body>
+</html>
